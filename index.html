@@ -7,55 +7,47 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <header>
+    <h1>加藤 瑞貴</h1>
+    <p>Webエンジニア / 個人開発者</p>
+  </header>
 
-<header>
-  <h1>My Portfolio</h1>
-  <p>エンジニア / 開発実績まとめ</p>
-</header>
+  <section class="profile">
+    <h2>プロフィール</h2>
+    <p>現在は社内受託案件でC# / PHP(Laravel)を使った開発に従事。  
+       個人開発として化粧品サイトを制作中。</p>
+    <p><strong>技術スタック:</strong> Ruby on Rails, PHP(Laravel), C#, SQL, Oracle</p>
+  </section>
 
-<section class="about">
-  <h2>自己紹介</h2>
-  <p>Webアプリ開発を中心に、Ruby on RailsやLaravelを使ったサービス構築を行っています。  
-     API連携やデータベース処理に強みがあります。</p>
-</section>
+  <section class="works">
+    <h2>制作実績</h2>
+    <div class="work-card">
+      <img src="img/ecsite.png" alt="ECサイト">
+      <h3>ECサイト（Ruby on Rails）</h3>
+      <p>プログラミングスクール卒業制作。  
+         ユーザー登録 / 商品検索 / カート機能 / 決済処理（Stripe API）を実装。</p>
+      <a href="#">GitHub</a> | <a href="#">デモURL</a>
+    </div>
 
-<section class="skills">
-  <h2>スキル</h2>
-  <ul>
-    <li>Ruby on Rails</li>
-    <li>PHP (Laravel)</li>
-    <li>JavaScript</li>
-    <li>MySQL</li>
-    <li>Git / GitHub</li>
-  </ul>
-</section>
+    <div class="work-card">
+      <img src="img/hp.png" alt="企業HP">
+      <h3>企業HP（Laravel）</h3>
+      <p>社内受託案件として開発。  
+         お問い合わせフォームや管理画面を実装。</p>
+      <a href="#">GitHub</a> | <a href="#">デモURL</a>
+    </div>
 
-<section class="projects">
-  <h2>制作物</h2>
-  
-  <div class="project">
-    <h3>ECサイト（Ruby on Rails）</h3>
-    <p>Railsを使用して開発したECサイト。ユーザー登録、商品一覧、カート機能、注文機能を実装。</p>
-    <a href="https://github.com/kato-mizuki/fleur" target="_blank">GitHubリポジトリを見る</a>
-  </div>
+    <div class="work-card">
+      <img src="img/cosme.png" alt="化粧品サイト">
+      <h3>化粧品サイト（Laravel / 開発中）</h3>
+      <p>個人開発。Bootstrapでレスポンシブ対応。  
+         商品一覧、レビュー投稿、問い合わせ機能を予定。</p>
+      <a href="#">GitHub</a>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>企業HP（PHP / Laravel）</h3>
-    <p>Laravelを用いて構築したコーポレートサイト。お問い合わせフォームを実装。</p>
-    <a href="https://github.com/kato-mizuki/HP" target="_blank">GitHubリポジトリを見る</a>
-  </div>
-
-  <div class="project">
-    <h3>化粧品ブランドサイト（PHP / Laravel）</h3>
-    <p>現在開発中の架空化粧品ブランドサイト。商品紹介ページ、口コミ投稿機能を実装予定。</p>
-    <a href="https://github.com/kato-mizuki/AquaLuce" target="_blank">GitHubリポジトリを見る</a>
-  </div>
-
-</section>
-
-<footer>
-  <p>&copy; 2025 My Portfolio</p>
-</footer>
-
+  <footer>
+    <p>© 2025 Mizuki Kato | <a href="https://github.com/kato-mizuki">GitHub</a></p>
+  </footer>
 </body>
 </html>
