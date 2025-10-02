@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f9fc;
+      color: #333;
+    }
+    header {
+      background: #4fc3f7;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #4fc3f7;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    .skills ul, .projects ul {
+      list-style: none;
+      padding: 0;
+    }
+    .skills li {
+      background: #e1f5fe;
+      display: inline-block;
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
+    .project {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0288d1;
+      text-decoration: none;
+    }
+    footer {
+      background: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+  <p>エンジニア / 開発実績まとめ</p>
+</header>
+
+<section class="about">
+  <h2>自己紹介</h2>
+  <p>ここに簡単な自己紹介を書きます。（例：C#やPHPを使ったWebアプリ開発が得意です。API連携やDB処理の経験があります。）</p>
+</section>
+
+<section class="skills">
+  <h2>スキル</h2>
+  <ul>
+    <li>C#</li>
+    <li>PHP (Laravel)</li>
+    <li>JavaScript</li>
+    <li>MySQL</li>
+    <li>Git / GitHub</li>
+  </ul>
+</section>
+
+<section class="projects">
+  <h2>制作物</h2>
+  
+  <div class="project">
+    <h3>天気予報アプリ</h3>
+    <p>OpenWeatherMap APIを使って、5日間の天気予報を表示するWindowsフォームアプリ。</p>
+    <a href="https://github.com/ユーザー名/リポジトリ名" target="_blank">GitHubリポジトリを見る</a>
+  </div>
+
+  <div class="project">
+    <h3>社員管理システム</h3>
+    <p>ASP.NET Webサービス（asmx）とADO.NETを利用し、社員情報のCRUD機能を実装。</p>
+    <a href="https://github.com/ユーザー名/リポジトリ名" target="_blank">GitHubリポジトリを見る</a>
+  </div>
+
+  <div class="project">
+    <h3>その他の作品</h3>
+    <p>その他の開発物はGitHubで公開しています。</p>
+    <a href="https://github.com/ユーザー名" target="_blank">GitHubプロフィールを見る</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 My Portfolio</p>
+</footer>
+
+</body>
+</html>
