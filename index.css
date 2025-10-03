@@ -1,11 +1,8 @@
-/* リセット */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+/* ===========================
+   基本リセット
+============================ */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  /* フォント設定 */
   body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.7;
@@ -14,10 +11,9 @@
     padding: 0 20px;
   }
 
-  /* Google Fonts */
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
-
-  /* ヘッダー */
+/* ===========================
+  ヘッダー
+============================ */
   header {
     text-align: center;
     padding: 50px 20px;
@@ -36,14 +32,15 @@
     margin-top: 5px;
   }
 
-  /* セクション共通 */
+/* ===========================
+  セクション
+============================ */
   section {
     max-width: 900px;
     margin: 60px auto;
     padding: 20px;
   }
 
-  /* 見出し */
   h2 {
     font-size: 2rem;
     margin-bottom: 25px;
@@ -61,7 +58,9 @@
     font-size: 1.5rem;
   }
 
-  /* プロフィール */
+/* ===========================
+  プロフィール
+============================ */
   .profile {
     background: linear-gradient(to right, #f9fcff, #e3f2fb);
     border-radius: 12px;
@@ -73,7 +72,9 @@
     line-height: 1.8;
   }
 
-  /* 制作実績カード */
+/* ===========================
+  制作実績カード
+============================ */
   .works {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -131,7 +132,9 @@
     background: #2a7bbf;
   }
 
-  /* フッター */
+/* ===========================
+  フッター
+============================ */
   footer {
     text-align: center;
     padding: 25px 20px;
@@ -141,7 +144,9 @@
     border-top: 1px solid #bde0f0;
   }
 
-  /* アニメーション用 (AOS) */
+/* ===========================
+  AOSアニメーション
+============================ */
   [data-aos] {
     opacity: 0;
     transform: translateY(20px);
@@ -152,4 +157,51 @@
   [data-aos].aos-animate {
     opacity: 1;
     transform: translateY(0);
+  }
+/* ===========================
+   レスポンシブ対応（スマホ）
+============================ */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    .work-card h3 {
+      font-size: 1.2rem;
+    }
+
+    .work-card p {
+      font-size: 0.95rem;
+    }
+
+    .works {
+      grid-template-columns: 1fr; /* 1列表示に */
+      gap: 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header p {
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 15px;
+    }
+
+    .work-card {
+      padding: 20px;
+    }
   }
