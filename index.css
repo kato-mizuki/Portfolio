@@ -139,7 +139,7 @@
 ============================ */
   footer {
     width: 100vw;       /* 画面幅いっぱい */
-    padding: 50px 20px; /* 縦幅を大きめに */
+    padding: 50px 0px; /* 縦幅を大きめに */
     background: linear-gradient(90deg, #d9f1fc, #e3f2fb);
     font-size: 0.95rem;
     border-top: 1px solid #bde0f0;
