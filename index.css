@@ -15,6 +15,7 @@
     min-height: 100vh;       
     display: flex;
     flex-direction: column;
+    overflow-x : hidden;                       /* 横スクロールをできないようにする */
   }
 
 /* ===========================
@@ -146,6 +147,7 @@
     color: #2a7bbf;
     margin-top: auto;
     box-sizing: border-box; /* パディング込みで横幅調整 */
+    text-align: center;
   }
 
 
