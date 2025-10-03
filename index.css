@@ -165,18 +165,3 @@
     section { padding: 15px; }
     .work-card { padding: 20px; }
   }
-
-/* ===========================
-   AOSアニメーション
-============================ */
-  [data-aos] {
-    opacity: 0;
-    transform: translateY(20px);
-    transition-property: opacity, transform;
-    transition-duration: 0.8s;
-  }
-
-  [data-aos].aos-animate {
-    opacity: 1;
-    transform: translateY(0);
-  }
