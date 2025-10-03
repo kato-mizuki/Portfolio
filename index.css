@@ -49,12 +49,12 @@
     padding-left: 15px;
     position: relative;
   }
-
+/* 
   h2::before {
     content: "★";
     color: #6bbde8;
     font-size: 1.5rem;
-  }
+  } */
 
 /* ===========================
   プロフィール
