@@ -52,8 +52,6 @@
 
   h2::before {
     content: "★";
-    position: absolute;
-    left: -70px;
     color: #6bbde8;
     font-size: 1.5rem;
   }
