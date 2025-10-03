@@ -140,11 +140,12 @@
 ============================ */
   footer {
     text-align: center;
-    background: linear-gradient(90deg, #d9f1fc, #e3f2fb);
+    background: linear-gradient(100%, #d9f1fc, #e3f2fb);
     font-size: 0.95rem;
     border-top: 1px solid #bde0f0;
     color: #2a7bbf;
     margin-top: auto;
+    padding: 0;
   }
 
 /* ===========================
