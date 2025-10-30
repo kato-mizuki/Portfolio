@@ -138,18 +138,73 @@
    プレビュー
 ============================ */
 .work-images{
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  margin-bottom: 25px;
+  color: #2a7bbf;
+  border-left: 6px solid #6bbde8;
+  padding-left: 10px;
+  position: relative;
+}
+.work-images img{
   width: 670px;
+  height: auto;
   text-align: center;
   justify-content: center;
-  margin: auto 10%;
+  margin: 5%;
+}
+h3,h2,h4 {
+  text-align: left;
+}
+h3,h4{
+  border-left: none;
+}
+h4{
+  color: #6bbde8;
+  border-bottom: #00A8E8;
 }
 
-img{
-  width: 670px;
-  text-align: center;
-  justify-content: center;
-  margin: auto 10%;
-}
+/* 再生ボタン設定 */
+.btn-play {
+        display: inline-block;
+        padding: 12px 35px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        color: #00A8E8;
+        box-shadow: 0 5px 15px rgba(0,168,232,0.3);
+        cursor: pointer;
+    }
+
+    .btn-play:hover {
+        background: #00A8E8;
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(0,168,232,0.5);
+    }
+
+    /* 波紋アニメーション風 */
+    .btn-play::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255,255,255,0.4);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.5s ease, height 0.5s ease;
+    }
+
+    .btn-play:hover::before {
+        width: 300%;
+        height: 300%;
+    }
 
 /* ===========================
    フッター

@@ -38,21 +38,59 @@
     </div>
 
     <div class="work-card">
-      <h3>化粧品サイト「AquaLuce」（Laravel / 開発中）</h3>
+      <h3>化粧品サイト「AquaLuce」（Laravel / PHP）</h3>
       <p>個人開発。水と光をテーマにしたデザインで、レスポンシブ対応。  
-         商品一覧、商品詳細、カート機能、お気に入り機能、レビュー投稿・問い合わせ機能、ユーザー登録、管理者、面を実装。</p>
+         商品一覧、商品詳細、カート機能、お気に入り機能、レビュー投稿・問い合わせ機能、ユーザー登録、管理者画面を実装。</p>
       <a href="https://github.com/kato-mizuki/AquaLuce">GitHub</a>
     </div>
   </section>
   <!-- 画像・GIFプレビュー -->
       <div class="work-images">
-        <h4>プレビュー</h4>
+        <h2>プレビュー</h2>
+        <h3>Aqualuce</h3>
+        <h4>TOPページ</h4>
         <img src="images/demo_top.png" alt="TOPページ" />
+        <h4>商品一覧ページ</h4>
         <img src="images/demo_products.png" alt="商品一覧ページ" />
+        <h4>商品詳細ページ</h4>
         <img src="images/demo_product_detail.png" alt="商品詳細ページ" />
+        <h4>カートページ</h4>
         <img src="images/demo_cart.png" alt="カートページ" />
-        <img src="images/slider.gif" alt="商品スライド" />
-        <img src="images/demo_animation.gif" alt="お気に入り動作" />
+        <div class="gif-container">
+        <h4>商品スライド</h4>
+          <img id="slideGif" src="images/slider.gif" alt="商品スライド" />
+          <button id="slideReplayBtn" style="display:none;" class="btn-play">再生</button>
+        </div>
+        <div class="gif-container">
+          <h4>お気に入り登録</h4>
+          <img id="favoriteGif" src="images/demo_animation.gif" alt="お気に入り" />
+          <button id="favoriteReplayBtn" style="display:none;" class="btn-play">再生</button>
+        </div>
+        <script>
+          function setupGifReplay(gifId, btnId, duration) {
+            const gif = document.getElementById(gifId);
+            const btn = document.getElementById(btnId);
+
+            // 最初の再生後にボタンを表示
+            setTimeout(() => {
+              btn.style.display = "inline-block";
+            }, duration);
+
+            // ボタンクリックで再生
+            btn.addEventListener("click", () => {
+              // GIFを再読み込みして再生
+              gif.src = gif.src.split("?")[0] + "?t=" + new Date().getTime();
+              btn.style.display = "none";
+              setTimeout(() => {
+                btn.style.display = "inline-block";
+              }, duration);
+            });
+          }
+
+          // GIFの再生時間（ミリ秒）を指定
+          setupGifReplay("slideGif", "slideReplayBtn", 2390);      // 商品スライド2s秒
+          setupGifReplay("favoriteGif", "favoriteReplayBtn", 6510); // お気に入りGIF6秒
+        </script>
       </div>
 
   <footer>
