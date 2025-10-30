@@ -134,6 +134,14 @@
   .work-card a:hover {
     background: #2a7bbf;
   }
+/* ===========================
+   プレビュー
+============================ */
+.work-images{
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
 
 /* ===========================
    フッター
