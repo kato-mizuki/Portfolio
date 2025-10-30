@@ -143,16 +143,16 @@
   display: grid;
   margin-bottom: 25px;
   color: #2a7bbf;
-  border-left: 6px solid #6bbde8;
   padding-left: 10px;
   position: relative;
+  width: 100%;
 }
 .work-images img{
   width: 670px;
   height: auto;
   text-align: center;
   justify-content: center;
-  margin: 5%;
+  margin: 2%;
 }
 h3,h2,h4 {
   text-align: left;
@@ -160,12 +160,19 @@ h3,h2,h4 {
 h3,h4{
   border-left: none;
 }
+h3{
+  margin-bottom: 25px;
+}
 h4{
   color: #6bbde8;
-  border-bottom: #00A8E8;
 }
 
 /* 再生ボタン設定 */
+.gif-container button {
+  display: inline-block; /* display none/ block の切り替えでも幅は確保 */
+  margin: 10px auto;
+}
+
 .btn-play {
         display: inline-block;
         padding: 12px 35px;
